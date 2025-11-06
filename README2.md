@@ -1,1 +1,0 @@
-Solutions to exam2 questions

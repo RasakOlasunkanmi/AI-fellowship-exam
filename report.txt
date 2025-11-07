@@ -60,13 +60,13 @@ Suggested monitoring of prediction distribution and periodic retraining.
 
 Key observed results from the Random Forest run:
 
-Overall accuracy 0.8643 — superficially good, but likely inflated by class imbalance (majority class Good dominates).
+Overall accuracy 0.70 — superficially good, but likely inflated by class imbalance (majority class Good dominates).
 
 Class-level behavior (example numbers from the run):
 
-Good — precision 0.86, recall 0.98, F1 around 0.92: model is very good at finding good wines (high recall) and reasonably precise — most wines labeled Good are actually good.
+Good — precision 0.72, recall 0.90, F1 around 0.80: model is very good at finding good wines (high recall) and reasonably precise — most wines labeled Good are actually good.
 
-Bad — precision 1.00, recall 0.05, F1 around 0.10: when the model predicts Bad it’s correct (precision 1.00) but it almost never predicts Bad (very low recall). This means the model misses most bad wines (bad sensitivity).
+Bad — precision 1.00, recall 0.00, F1 around 0.10: when the model predicts Bad it’s correct (precision 1.00) but it almost never predicts Bad (very low recall). This means the model misses most bad wines (bad sensitivity).
 
 Average — moderate precision (0.89) but lower recall (0.62): the model detects many, but misses some.
 
